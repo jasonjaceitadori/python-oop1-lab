@@ -143,4 +143,19 @@ Before you submit your solution, you need to save your progress with git.
 4. When you are ready to submit, click the ***Load Lab: Object Oriented Programming (OOP)- Part 1- Bookstore*** button in Canvas to launch CodeGrade.
   * Click on + Create Submission. Connect your repository for this lab.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas)
+## Completed Implementation
 
+This repository now includes:
+
+* `lib/book.py` with a `Book` class that accepts `title` and `page_count`.
+  * `page_count` validates that values are integers and prints an error message otherwise.
+  * `turn_page()` prints the required page-turn message.
+* `lib/coffee.py` with a `Coffee` class that accepts `size` and `price`.
+  * `size` validates that the value is `Small`, `Medium`, or `Large` and prints an error message for invalid input.
+  * `tip()` prints the required tip message and increases the `price` by `1`.
+
+### Testing
+
+* A local virtual environment was created at `.venv`.
+* `pytest` was installed there and the project tests were executed.
+* All tests passed successfully.
